@@ -6,7 +6,12 @@ var Video = Backbone.Model.extend({
   },
 
   select: function() {
-    this.trigger('select', this);
+    // this.trigger('select', this.function, this)
+    this.trigger('click', this.sayHello(), this);
+  },
+
+  sayHello: function(){
+    console.log('say hello')
   }
 
 });
