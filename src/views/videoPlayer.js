@@ -14,6 +14,3 @@ var VideoPlayerView = Backbone.View.extend({
   template: templateURL('src/templates/videoPlayer.html')
 
 });
-
-var test = new VideoPlayerView(); 
-test.init();
